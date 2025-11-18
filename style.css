@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  width: 400px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  outline: none;
+}
+
+.input-box button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-box button:hover {
+  background: #0056b3;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background: #f8f9fa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-buttons button {
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+}
+
+.edit {
+  background-color: #ffc107;
+}
+
+.delete {
+  background-color: #dc3545;
+}
+
+.done {
+  background-color: #28a745;
+}
+
+
+
+
+
+.task-list {
+  background: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.task-list:hover {
+  transform: translateY(-2px);
+}
+
+.task-list p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.btns {
+  display: flex;
+  gap: 5px;
+}
+
+.btns button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+/* Tugma ranglari */
+.btns button:nth-child(1) {
+  background-color: #28a745; /* ✅ Done */
+}
+.btns button:nth-child(1):hover {
+  background-color: #218838;
+}
+
+.btns button:nth-child(2) {
+  background-color: #ffc107; /* ✏️ Edit */
+  color: black;
+}
+.btns button:nth-child(2):hover {
+  background-color: #e0a800;
+}
+
+.btns button:nth-child(3) {
+  background-color: #dc3545; /* 🗑️ Delete */
+}
+.btns button:nth-child(3):hover {
+  background-color: #b02a37;
+}
+
+
+.task{
+  padding: 10px 20px;
+  background-color: #def3f8;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
